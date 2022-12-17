@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de notas con firebase</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form id="datos">
+     <!--todos los elementos del comentario deben llevar un id-->
+        <!--titulo-->
+        <label for="titulo">titulo</label>
+        <input type="text" id="titulo" placeholder="introduzca un texto">
+       
+        <!--descripcion-->
+        <label for="descripcion">descripción</label>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+        <!--prioridad-->
+        <label for="prioridad">prioridad</label>
+        <select name="prioridad" id="prioridad">
+        <option value="alta">alta</option>
+        <option value="alta">media</option>
+        <option value="alta">baja</option>
+       </select>
+
+        <!--fecha de registro-->
+        <label for="fecha_registro">fecha de registro</label>
+       <input type="date" id="fecha_registro">
+       <input type="date" id="fecha_registro">
+
+        <!--fecha de vencimiento-->
+        <label for="fecha_vencimiento">fecha de vencimiento</label>
+       <input type="date" id="fecha_vencimiento">
+       <input type="date" id="fecha_vencimiento">
+       
+    </form>
+    <script src="./firebase.js" type="module"></script>
+</body>
+</html>
